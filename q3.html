@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        class DateElement extends HTMLElement {
+            connectedCallback(){
+                this.innerHTML = new Date().getFullYear();
+            }
+        }
+        customElements.define("x-fullyear", DateElement);
+    </script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <h1>Where in the world is Jayden</h1>
+        <p>Jayden was here</p>
+    </main>
+    <footer>
+        &copy; Jayden K. <x-fullyear></x-fullyear>
+    </footer>
+</body>
+
+</html>
