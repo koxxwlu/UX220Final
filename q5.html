@@ -1,8 +1,10 @@
+<!--Validated-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <h1>Responsive Image</h1>
+    <title>Responsive Image</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .responsive {
@@ -13,11 +15,14 @@
 </head>
 
 <body>
+    <header>
+        <h1>Responsive Image</h1>
+    </header>
     <main>
         <figure>
             <picture>
                 <source srcset="400x600.png" media="(orientation: portrait)">
-                <img src="728x200.png" alt="This is an image." class="responsive"/>
+                <img src="728x200.png" alt="This is an image that adapts dynamically to the viewport size." class="responsive"/>
             </picture>
             <figcaption>responsive placeholder image</figcaption>
         </figure>
