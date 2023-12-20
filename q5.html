@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <h1>Responsive Image</h1>
+    <style>
+        picture {
+            width: 90vw;
+            height: 90vh;
+        }
+    </style>
 </head>
 <body>
     <main>
-        <h3>Responsive Image</h3>
         <figure>
             <picture>
                 <source srcset="readmeimages/400x600.png"
                     media="(orientation: portrait)">
-                <img src="readmeimages/728x200.png" />
+                <img src="readmeimages/728x200.png" alt="This is an image."/>
             </picture>
             <figcaption>responsive placeholder image</figcaption>
         </figure>
